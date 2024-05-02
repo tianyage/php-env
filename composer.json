@@ -1,0 +1,22 @@
+{
+  "name": "tianyage/php-env",
+  "type": "library",
+  "require": {
+    "php": ">=8.2"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Tianyage\\PhpEnv\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "tianyage",
+      "email": "454701103@qq.com"
+    }
+  ]
+}
