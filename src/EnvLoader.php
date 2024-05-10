@@ -64,9 +64,9 @@ class EnvLoader
      */
     protected function loadEnv(string $envFile = ''): array
     {
-        // 未传入env文件路径时，默认认为是composer引入的路径，向上跳2级来获取web根目录
+        // 未传入env文件路径时，默认认为是composer引入的路径，向上跳4级来获取web根目录
         if (!$envFile) {
-            $envFile = dirname(__DIR__, 2);
+            $envFile = dirname(__DIR__, 4);
         }
         
         $env = [];
