@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 use Tianyage\PhpEnv\EnvLoader;
 
-require '../vendor/autoload.php';
+define('ROOT_DIR', dirname(__DIR__) . DIRECTORY_SEPARATOR);
+
+require ROOT_DIR . '/vendor/autoload.php';
 
 $loader = new EnvLoader(__DIR__ . '/.env');
 print_r($loader->get(''));
 print_r($loader->get('TESTA') . PHP_EOL);
 print_r($loader->get('TEST.TESTB') . PHP_EOL);
-
 
 // 助手函数方式
 echo '-------' . PHP_EOL;
